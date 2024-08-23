@@ -17,11 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\Import.Application.Contract\Import.Application.Contract.csproj" />
+    <ProjectReference Include="..\Import.Application\Import.Application.csproj" />
     <ProjectReference Include="..\Import.Infrastructure.DataBase\Import.Infrastructure.DataBase.csproj" />
+    <ProjectReference Include="..\Import.Infrastructure\Import.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

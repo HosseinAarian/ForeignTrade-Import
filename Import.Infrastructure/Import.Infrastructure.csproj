@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Import.Domain.Core\Import.Domain.Core.csproj" />
+    <ProjectReference Include="..\Import.Infrastructure.DataBase\Import.Infrastructure.DataBase.csproj" />
+  </ItemGroup>
+
 </Project>

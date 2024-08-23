@@ -1,4 +1,6 @@
 using Import.API.Configurations;
+using Import.Infrastructure;
+using Import.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDataBaseSetup(builder.Configuration);
+builder.Services.AddInfrastructureRepositories();
+builder.Services.AddApplicationService();
+
 
 var app = builder.Build();
 
