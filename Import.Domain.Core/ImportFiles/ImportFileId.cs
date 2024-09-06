@@ -9,9 +9,6 @@ namespace Import.Domain.Core.ImportFiles
 {
     public sealed class ImportFileId : StronglyTypeId<ImportFileId>
     {
-        public ImportFileId(Guid value) : base(value)
-        {
-
-        }
+        public ImportFileId(Guid value) : base(value) { }
     }
 }

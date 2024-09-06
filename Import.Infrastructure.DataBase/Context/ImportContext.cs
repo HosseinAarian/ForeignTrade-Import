@@ -1,4 +1,5 @@
 ﻿using Import.Domain.Core.ImportFiles;
+using Import.Domain.Core.ImportProforma;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace Import.Infrastructure.DataBase.Context
     {
         //Just AggregateRoots
         public DbSet<ImportFile> ImportFiles { get; set; }
+        public DbSet<ImportProforma> ImportProformas { get; set; }
 
 
         public ImportContext(DbContextOptions<ImportContext> options) : base(options)
